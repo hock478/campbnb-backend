@@ -16,9 +16,9 @@ user3 = User.create(username: 'dawitdawit' , fullname: 'Dawit' , bio: 'Thinking 
 user4 = User.create(username: 'chine4flatiron' , fullname: 'Chine' , bio: 'I am a programmer. I can afford a hotel. But I still choose to camp.' , image_url: 'https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png')
 user5 = User.create(username: 'babycakes2000' , fullname: 'Johnny Cash' , bio: 'Love to travel. Hate to waste money.' , image_url: 'https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png')
 
-property1 = Property.create(owner_id: user1.id, name: 'Camp Far North', city: 'Middle of Nowhere', state: 'Montana', details: 'You are on your own with this camp site')
-property2 = Property.create(owner_id: user2.id, name: 'Tiny House Camp', city: 'Salt Lake City', state: 'Utah', details: 'Beautiful national parks. Onsite showers.')
-property3 = Property.create(owner_id: user3.id, name: 'Lake Tahoe South', city: 'Lake Tahoe', state: 'California', details: 'Beautiful views of the lake, and casinos near by.')
+property1 = Property.create(owner_id: user1.id, name: 'Camp Far North', city: 'Middle of Nowhere', state: 'Montana', details: 'You are on your own with this camp site', img_url: "https://tahoesup.com/wp-content/uploads/2019/03/photo-ts-camp-far-west-reservoir-gallery-image-2-1000x600.jpg" , price_per_night: 100)
+property2 = Property.create(owner_id: user2.id, name: 'Tiny House Camp', city: 'Salt Lake City', state: 'Utah', details: 'Beautiful national parks. Onsite showers.', img_url: "https://live.mrf.io/statics/i/ps/149364033.v2.pressablecdn.com/wp-content/uploads/2012/07/IMG_3855.jpg?width=1200&enable=upscale" , price_per_night: 80)
+property3 = Property.create(owner_id: user3.id, name: 'Lake Tahoe South', city: 'Lake Tahoe', state: 'California', details: 'Beautiful views of the lake, and casinos near by.', img_url: "https://cdn.abcotvs.com/dip/images/5392681_071219-kgo-tahoe-nears-legal-limit-img_Image_21-21-05,02.jpg?w=800&r=16%3A9" , price_per_night: 150)
 # property4 = Property.create(user_id: user2.id, name: 'Deep Creek Camping', city: 'Deep Creek', state: 'Maryland', details: 'Just a few hour drive from DC and Baltimore.')
 # property5 = Property.create(user_id: user3.id, name: 'Beach Camp Grounds', city: 'Ocean City', state: 'Maryland', details: 'Camping in the sand dunes and an ocean beeze. ')
 

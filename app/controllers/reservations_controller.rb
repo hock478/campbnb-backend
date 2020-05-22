@@ -6,7 +6,8 @@ class ReservationsController < ApplicationController
     end
 
     def show
-        reservations = Reservation.find_by(user_id: params[:id])
+        reservations = Reservation.where(user_id: params[:id])
+        render json: reservations.as_json(:include => [:property])
     end
 
     def create

@@ -6,6 +6,8 @@ class CreateProperty < ActiveRecord::Migration[6.0]
       t.string :city
       t.string :state
       t.string :details
+      t.string :img_url 
+      t.integer :price_per_night
     end
   end
 end

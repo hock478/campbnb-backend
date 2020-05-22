@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 2020_05_21_203140) do
     t.string "city"
     t.string "state"
     t.string "details"
+    t.string "img_url"
+    t.integer "price_per_night"
   end
 
   create_table "reservations", force: :cascade do |t|

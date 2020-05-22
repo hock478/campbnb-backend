@@ -23,11 +23,11 @@ property3 = Property.create(owner_id: user3.id, name: 'Lake Tahoe South', city: 
 # property5 = Property.create(user_id: user3.id, name: 'Beach Camp Grounds', city: 'Ocean City', state: 'Maryland', details: 'Camping in the sand dunes and an ocean beeze. ')
 
 
-reservation1 = Reservation.create(user_id: user2, property_id: property1 ,start_date: "05-21-20", end_date: "05-27-20")
-reservation2 = Reservation.create(user_id: user1, property_id: property2 ,start_date: "05-23-20", end_date: "05-28-20")
-reservation3 = Reservation.create(user_id: user4, property_id: property3 ,start_date: "05-22-20", end_date: "05-26-20")
-reservation4 = Reservation.create(user_id: user3, property_id: property1 ,start_date: "05-25-20", end_date: "05-29-20")
-reservation5 = Reservation.create(user_id: user5, property_id: property2 ,start_date: "05-30-20", end_date: "06-05-20")
+reservation1 = Reservation.create(user_id: user2.id, property_id: property1.id ,start_date: "05-21-20", end_date: "05-27-20")
+reservation2 = Reservation.create(user_id: user1.id, property_id: property2.id ,start_date: "05-23-20", end_date: "05-28-20")
+reservation3 = Reservation.create(user_id: user4.id, property_id: property3.id ,start_date: "05-22-20", end_date: "05-26-20")
+reservation4 = Reservation.create(user_id: user3.id, property_id: property1.id ,start_date: "05-25-20", end_date: "05-29-20")
+reservation5 = Reservation.create(user_id: user5.id, property_id: property2.id ,start_date: "05-30-20", end_date: "06-05-20")
 
 
 review1 = Review.create(user_id: user2.id, reservation_id: reservation1.id, rating: 4, content: 'Nice stay but could have been better')

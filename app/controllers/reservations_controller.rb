@@ -5,9 +5,13 @@ class ReservationsController < ApplicationController
         render json: reservations
     end
 
+    def show
+        reservations = Reservation.find_by(user_id: params[:id])
+    end
+
     def create
     
     end
 
-
+    
 end

@@ -5,5 +5,4 @@ Rails.application.routes.draw do
   resources :properties
   resources :reservations
   resources :reviews
-  resources :
 end

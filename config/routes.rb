@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   resources :properties
   resources :reservations
   resources :reviews
+  
+  post '/login', to: 'auth#create'
 end

@@ -1,0 +1,453 @@
+Started GET "/properties" for ::1 at 2020-05-25 06:09:23 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (4.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 33ms (Views: 9.0ms | ActiveRecord: 13.7ms | Allocations: 10015)
+
+
+Started GET "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z//5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D" for ::1 at 2020-05-25 06:09:24 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https:/f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z/5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z//5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D" for ::1 at 2020-05-25 06:09:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https:/f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z/5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z//5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D" for ::1 at 2020-05-25 06:09:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https:/f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z/5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z//5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D" for ::1 at 2020-05-25 06:10:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https:/f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z/5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z//5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D" for ::1 at 2020-05-25 06:10:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https:/f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z/5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z//5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D" for ::1 at 2020-05-25 06:10:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https:/f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z/5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z//5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D" for ::1 at 2020-05-25 06:10:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https:/f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z/5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z//5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D" for ::1 at 2020-05-25 06:10:23 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/reservations/%7B%22id%22:16,%22username%22:%22richardbobo%22,%22fullname%22:%22Richard%20Bobo%22,%22bio%22:%22Trying%20to%20travel%20the%20world%20on%20a%20dime.%22,%22image_url%22:%22https:/f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png%22,%22password_digest%22:%22$2a$12$VPYr55d1b/Uz5Z/5lVxneaYeatDcgw1FL7UzO87QPcU9pr0KBBKK%22%7D"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/reservations/16" for ::1 at 2020-05-25 06:10:28 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (9.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 69ms (Views: 0.5ms | ActiveRecord: 17.9ms | Allocations: 10139)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-25 06:10:33 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 1803)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-25 06:10:35 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 1820)
+
+
+Started GET "/properties" for ::1 at 2020-05-25 06:10:35 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms | Allocations: 1263)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-25 06:10:36 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (1.0ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.3ms | Allocations: 1820)
+
+
+Started GET "/properties" for ::1 at 2020-05-25 06:10:45 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.9ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.9ms | Allocations: 1246)
+
+
+Started GET "/properties" for ::1 at 2020-05-25 06:14:18 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.8ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 0.8ms | Allocations: 1246)
+
+
+Started GET "/properties" for ::1 at 2020-05-25 06:14:46 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (1.8ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 1.8ms | Allocations: 1246)
+
+
+Started GET "/properties" for ::1 at 2020-05-25 06:14:49 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (2.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 2.5ms | Allocations: 1246)
+
+
+Started GET "/properties" for ::1 at 2020-05-25 06:15:37 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.5ms | Allocations: 1246)
+
+
+Started GET "/properties" for ::1 at 2020-05-25 06:15:44 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (1.6ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 1.6ms | Allocations: 1246)
+
+
+Started GET "/properties" for ::1 at 2020-05-25 06:16:59 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (1.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.0ms | Allocations: 1246)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-25 06:17:00 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 62ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 1807)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-25 06:17:31 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 1803)
+
+
+Started GET "/properties" for ::1 at 2020-05-25 06:17:32 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.5ms | Allocations: 1246)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-25 06:17:36 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 1803)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-25 06:18:17 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1803)
+
+
+Started GET "/properties" for ::1 at 2020-05-25 06:18:17 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (2.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 2.5ms | Allocations: 1246)
+
+
+Started GET "/properties" for ::1 at 2020-05-25 06:18:19 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1246)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-25 06:18:24 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 1803)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-25 06:18:25 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 1803)
+
+
+Started POST "/login" for ::1 at 2020-05-25 06:19:00 -0400
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"uzo4000", "password"=>"[FILTERED]", "auth"=>{"username"=>"uzo4000", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "uzo4000"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7:in `create'
+Completed 200 OK in 247ms (Views: 0.5ms | ActiveRecord: 14.4ms | Allocations: 6877)
+
+
+Started GET "/reservations/17" for ::1 at 2020-05-25 06:19:03 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mReservation Load (0.6ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (1.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 1798)
+
+
+Started GET "/properties" for ::1 at 2020-05-25 06:19:04 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1246)
+
+
+Started GET "/reservations/17" for ::1 at 2020-05-25 06:19:04 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 1798)
+
+
+Started GET "/properties" for ::1 at 2020-05-25 06:19:15 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1246)
+
+
+Started GET "/reservations/17" for ::1 at 2020-05-25 06:19:15 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1798)
+
+

@@ -10,7 +10,6 @@ User.destroy_all
 Property.destroy_all
 Reservation.destroy_all
 Review.destroy_all
-
 user1 = User.create(username: 'richardbobo' , fullname: 'Richard Bobo' , bio: 'Trying to travel the world on a dime.' , image_url: 'https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png', password_digest: BCrypt::Password.create('password'))
 user2 = User.create(username: 'uzo4000' , fullname: 'Uzo' , bio: 'There better be beds at these camp sites.' , image_url: 'https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png',password_digest:  BCrypt::Password.create('password'))
 user3 = User.create(username: 'dawitdawit' , fullname: 'Dawit' , bio: 'Thinking about traveling when I can.' , image_url: 'https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png',password_digest: BCrypt::Password.create('password'))
@@ -27,8 +26,11 @@ property3 = Property.create(owner_id: user3.id, name: 'Lake Tahoe South', city: 
 reservation1 = Reservation.create(user_id: user2.id, property_id: property1.id ,start_date: "05-21-20", end_date: "05-27-20")
 reservation2 = Reservation.create(user_id: user1.id, property_id: property2.id ,start_date: "05-23-20", end_date: "05-28-20")
 reservation3 = Reservation.create(user_id: user4.id, property_id: property3.id ,start_date: "05-22-20", end_date: "05-26-20")
+<<<<<<< HEAD
 reservation6 = Reservation.create(user_id: user5.id, property_id: property3.id ,start_date: "06-20-20", end_date: "06-26-20")
 
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
 reservation4 = Reservation.create(user_id: user3.id, property_id: property1.id ,start_date: "05-25-20", end_date: "05-29-20")
 reservation5 = Reservation.create(user_id: user5.id, property_id: property2.id ,start_date: "05-30-20", end_date: "06-05-20")
 
@@ -36,6 +38,108 @@ reservation5 = Reservation.create(user_id: user5.id, property_id: property2.id ,
 review1 = Review.create(user_id: user2.id, reservation_id: reservation1.id, rating: 4, content: 'Nice stay but could have been better')
 review2 = Review.create(user_id: user1.id, reservation_id: reservation2.id, rating: 5, content: 'loved it!')
 review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
 review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
+
+
+review1 = Review.create(user_id: user2.id, reservation_id: reservation1.id, rating: 4, content: 'Nice stay but could have been better')
+review2 = Review.create(user_id: user1.id, reservation_id: reservation2.id, rating: 5, content: 'loved it!')
+review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
+<<<<<<< HEAD
+review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+=======
+>>>>>>> 2c082483813c3741737b4ca26e7ebb3ae64692eb
 
 

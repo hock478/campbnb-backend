@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :reviews
   
   post '/login', to: 'auth#create'
+  # get '/reviews/:id', to: 'reviews#property_reviews'
 end

@@ -8526,3 +8526,1573 @@ Processing by ReviewsController#show as */*
 Completed 200 OK in 43ms (Views: 2.0ms | ActiveRecord: 16.2ms | Allocations: 7741)
 
 
+Started GET "/reviews/15" for ::1 at 2020-05-26 15:56:33 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mReview Load (8.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (1.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.5ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 71ms (Views: 1.6ms | ActiveRecord: 14.4ms | Allocations: 27782)
+
+
+Started GET "/reviews/15" for ::1 at 2020-05-26 15:58:01 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (0.6ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.5ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (1.9ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 53ms (Views: 2.5ms | ActiveRecord: 6.2ms | Allocations: 7721)
+
+
+Started GET "/reviews/15" for ::1 at 2020-05-26 15:58:39 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.8ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.9ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (1.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 35ms (Views: 0.4ms | ActiveRecord: 6.5ms | Allocations: 7721)
+
+
+Started GET "/reviews/15" for ::1 at 2020-05-26 15:58:46 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (1.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (1.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 65ms (Views: 38.4ms | ActiveRecord: 5.6ms | Allocations: 7724)
+
+
+Started GET "/reviews/15" for ::1 at 2020-05-26 15:59:34 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mReview Load (7.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (1.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.7ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (2.8ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.6ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (8.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 58ms (Views: 1.8ms | ActiveRecord: 25.5ms | Allocations: 7721)
+
+
+Started GET "/reviews/15" for ::1 at 2020-05-26 15:59:35 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.7ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 17ms (Views: 0.5ms | ActiveRecord: 3.1ms | Allocations: 7721)
+
+
+Started GET "/reviews/15" for ::1 at 2020-05-26 16:01:01 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mReview Load (2.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (5.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (2.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (27.9ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (5.9ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (11.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (17.9ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (16.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 119ms (Views: 0.5ms | ActiveRecord: 90.8ms | Allocations: 7721)
+
+
+Started GET "/reviews/15" for ::1 at 2020-05-26 16:01:11 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mReview Load (1.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (0.6ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 4.0ms | Allocations: 7721)
+
+
+Started GET "/reviews/15" for ::1 at 2020-05-26 16:01:32 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.7ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (7.9ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (3.9ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.9ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (2.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (19.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 65ms (Views: 0.3ms | ActiveRecord: 39.3ms | Allocations: 7721)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-05-26 16:09:36 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.6ms | Allocations: 1488)
+
+
+Started GET "/reviews/15" for ::1 at 2020-05-26 16:11:42 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mReview Load (14.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (1.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (1.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.9ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+  [1m[36mUser Load (16.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 168ms (Views: 0.4ms | ActiveRecord: 38.8ms | Allocations: 7773)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:26:41 -0400
+  
+SyntaxError (/Users/dawitgizaw/Desktop/Development/code/CampBNB/campbnb-backend/app/controllers/properties_controller.rb:5: syntax error, unexpected <<, expecting end
+<<<<<<< HEAD
+^~
+/Users/dawitgizaw/Desktop/Development/code/CampBNB/campbnb-backend/app/controllers/properties_controller.rb:12: syntax error, unexpected ===, expecting end
+=======
+^~~
+/Users/dawitgizaw/Desktop/Development/code/CampBNB/campbnb-backend/app/controllers/properties_controller.rb:14: syntax error, unexpected >>, expecting end
+>>>>>>> 2c082483813c3741737b4ca...
+^~):
+  
+app/controllers/properties_controller.rb:5: syntax error, unexpected <<, expecting end
+app/controllers/properties_controller.rb:12: syntax error, unexpected ===, expecting end
+app/controllers/properties_controller.rb:14: syntax error, unexpected >>, expecting end
+app/controllers/properties_controller.rb:5: syntax error, unexpected <<, expecting end
+app/controllers/properties_controller.rb:12: syntax error, unexpected ===, expecting end
+app/controllers/properties_controller.rb:14: syntax error, unexpected >>, expecting end
+Started GET "/properties" for ::1 at 2020-05-26 16:27:37 -0400
+  
+SyntaxError (/Users/dawitgizaw/Desktop/Development/code/CampBNB/campbnb-backend/app/controllers/properties_controller.rb:5: syntax error, unexpected <<, expecting end
+<<<<<<< HEAD
+^~
+/Users/dawitgizaw/Desktop/Development/code/CampBNB/campbnb-backend/app/controllers/properties_controller.rb:12: syntax error, unexpected ===, expecting end
+=======
+^~~
+/Users/dawitgizaw/Desktop/Development/code/CampBNB/campbnb-backend/app/controllers/properties_controller.rb:14: syntax error, unexpected >>, expecting end
+>>>>>>> 2c082483813c3741737b4ca...
+^~):
+  
+app/controllers/properties_controller.rb:5: syntax error, unexpected <<, expecting end
+app/controllers/properties_controller.rb:12: syntax error, unexpected ===, expecting end
+app/controllers/properties_controller.rb:14: syntax error, unexpected >>, expecting end
+app/controllers/properties_controller.rb:5: syntax error, unexpected <<, expecting end
+app/controllers/properties_controller.rb:12: syntax error, unexpected ===, expecting end
+app/controllers/properties_controller.rb:14: syntax error, unexpected >>, expecting end
+Started GET "/properties" for ::1 at 2020-05-26 16:27:47 -0400
+  
+SyntaxError (/Users/dawitgizaw/Desktop/Development/code/CampBNB/campbnb-backend/app/controllers/properties_controller.rb:5: syntax error, unexpected <<, expecting end
+<<<<<<< HEAD
+^~
+/Users/dawitgizaw/Desktop/Development/code/CampBNB/campbnb-backend/app/controllers/properties_controller.rb:12: syntax error, unexpected ===, expecting end
+=======
+^~~
+/Users/dawitgizaw/Desktop/Development/code/CampBNB/campbnb-backend/app/controllers/properties_controller.rb:14: syntax error, unexpected >>, expecting end
+>>>>>>> 2c082483813c3741737b4ca...
+^~):
+  
+app/controllers/properties_controller.rb:5: syntax error, unexpected <<, expecting end
+app/controllers/properties_controller.rb:12: syntax error, unexpected ===, expecting end
+app/controllers/properties_controller.rb:14: syntax error, unexpected >>, expecting end
+app/controllers/properties_controller.rb:5: syntax error, unexpected <<, expecting end
+app/controllers/properties_controller.rb:12: syntax error, unexpected ===, expecting end
+app/controllers/properties_controller.rb:14: syntax error, unexpected >>, expecting end
+Started GET "/properties" for ::1 at 2020-05-26 16:28:17 -0400
+Processing by PropertiesController#index as HTML
+  [1m[36mProperty Load (5.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 186ms (Views: 1.0ms | ActiveRecord: 76.5ms | Allocations: 25578)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:28:22 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (3.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (20.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 63ms (Views: 1.6ms | ActiveRecord: 35.6ms | Allocations: 7426)
+
+
+Started GET "/reviews/13" for ::1 at 2020-05-26 16:29:28 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mReview Load (2.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.6ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.6ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.5ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (1.9ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 80ms (Views: 0.4ms | ActiveRecord: 8.1ms | Allocations: 10521)
+
+
+Started GET "/reviews/13" for ::1 at 2020-05-26 16:31:08 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mReview Load (23.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (18.5ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (1.7ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.5ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 168ms (Views: 5.3ms | ActiveRecord: 45.3ms | Allocations: 7057)
+
+
+Started GET "/reviews/13" for ::1 at 2020-05-26 16:31:14 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 46ms (Views: 0.3ms | ActiveRecord: 2.3ms | Allocations: 7056)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:31:17 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 745)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:31:17 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 57ms (Views: 0.5ms | ActiveRecord: 1.7ms | Allocations: 7429)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:31:19 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 2.5ms | Allocations: 7426)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:31:21 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 727)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:31:23 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 727)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:31:24 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 0.6ms | ActiveRecord: 2.5ms | Allocations: 7426)
+
+
+Started GET "/reviews/15" for ::1 at 2020-05-26 16:32:15 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.8ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 44ms (Views: 1.7ms | ActiveRecord: 5.1ms | Allocations: 7721)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:32:18 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (1.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 727)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:32:20 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 727)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:32:21 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 36ms (Views: 1.7ms | ActiveRecord: 2.9ms | Allocations: 7426)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:32:23 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (1.8ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 727)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:32:24 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 28ms (Views: 3.5ms | ActiveRecord: 3.0ms | Allocations: 7426)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:32:25 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (7.6ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 0.5ms | ActiveRecord: 9.4ms | Allocations: 7426)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:32:26 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (1.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 727)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-26 16:32:51 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dawitgizaw/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dawitgizaw/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 23.1ms | Allocations: 197)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.0ms | Allocations: 739)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-05-26 16:33:02 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1450)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:33:15 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 727)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:33:21 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 727)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:33:23 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 2.6ms | Allocations: 7426)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:33:23 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 727)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:33:25 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 727)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:33:25 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 7426)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:33:31 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 727)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:33:32 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 0.6ms | ActiveRecord: 3.1ms | Allocations: 7426)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:33:34 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 3.2ms | Allocations: 7426)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:33:35 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 727)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:34:31 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 727)
+
+
+Started GET "/reservations/1" for ::1 at 2020-05-26 16:35:23 -0400
+Processing by ReservationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 725)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:35:24 -0400
+Processing by ReservationsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 725)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:35:28 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 727)
+
+
+Started GET "/reservations/17" for ::1 at 2020-05-26 16:35:34 -0400
+Processing by ReservationsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 725)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:35:35 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 727)
+
+
+Started GET "/reservations/18" for ::1 at 2020-05-26 16:35:37 -0400
+Processing by ReservationsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 725)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:35:39 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 727)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:35:51 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (11.9ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 11.9ms | Allocations: 727)
+
+
+Started GET "/properties" for 127.0.0.1 at 2020-05-26 16:35:52 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 62ms (Views: 0.6ms | ActiveRecord: 2.2ms | Allocations: 7429)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:35:58 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (1.7ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 727)
+
+
+Started GET "/properties" for 127.0.0.1 at 2020-05-26 16:35:59 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 0.6ms | ActiveRecord: 1.5ms | Allocations: 7427)
+
+
+Started GET "/properties" for 127.0.0.1 at 2020-05-26 16:36:03 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 2.0ms | Allocations: 7426)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:36:19 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (2.7ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.7ms | Allocations: 727)
+
+
+Started GET "/properties" for 127.0.0.1 at 2020-05-26 16:36:20 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.7ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 2.7ms | Allocations: 7426)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:36:32 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (1.7ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 727)
+
+
+Started GET "/properties" for 127.0.0.1 at 2020-05-26 16:36:32 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 0.6ms | ActiveRecord: 1.4ms | Allocations: 7426)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:36:40 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (8.5ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 8.5ms | Allocations: 727)
+
+
+Started GET "/properties" for 127.0.0.1 at 2020-05-26 16:36:41 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 1.7ms | Allocations: 7426)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:37:04 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 727)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:37:05 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 2.6ms | Allocations: 7426)
+
+
+Started GET "/reviews/15" for ::1 at 2020-05-26 16:37:07 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mReview Load (3.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (0.8ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (1.7ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 33ms (Views: 0.3ms | ActiveRecord: 7.6ms | Allocations: 7724)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:37:25 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 727)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:37:26 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 0.5ms | ActiveRecord: 2.0ms | Allocations: 7426)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:37:31 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (1.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 0.8ms | ActiveRecord: 3.7ms | Allocations: 7426)
+
+
+Started GET "/reservations/16" for ::1 at 2020-05-26 16:37:32 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mReservation Load (1.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 727)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:37:35 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 2.2ms | Allocations: 7426)
+
+
+Started GET "/properties" for 127.0.0.1 at 2020-05-26 16:38:23 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 0.5ms | ActiveRecord: 2.1ms | Allocations: 7426)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-05-26 16:38:40 -0400
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"richardbobo", "password"=>"[FILTERED]", "auth"=>{"username"=>"richardbobo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (9.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "richardbobo"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7:in `create'
+Completed 200 OK in 241ms (Views: 0.3ms | ActiveRecord: 9.1ms | Allocations: 915)
+
+
+Started GET "/properties" for 127.0.0.1 at 2020-05-26 16:38:44 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 2.0ms | Allocations: 7426)
+
+
+Started POST "/login" for ::1 at 2020-05-26 16:39:27 -0400
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"richardbobo", "password"=>"[FILTERED]", "auth"=>{"username"=>"richardbobo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "richardbobo"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7:in `create'
+Completed 200 OK in 212ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 779)
+
+
+Started GET "/properties" for 127.0.0.1 at 2020-05-26 16:39:30 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 0.7ms | ActiveRecord: 2.8ms | Allocations: 7426)
+
+
+Started GET "/properties" for 127.0.0.1 at 2020-05-26 16:39:45 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 1.3ms | Allocations: 7429)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-05-26 16:39:55 -0400
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"richardbobo", "password"=>"[FILTERED]", "auth"=>{"username"=>"richardbobo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "richardbobo"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7:in `create'
+Completed 200 OK in 217ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 780)
+
+
+Started GET "/properties" for 127.0.0.1 at 2020-05-26 16:40:47 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 2.1ms | Allocations: 7426)
+
+
+Started GET "/properties" for 127.0.0.1 at 2020-05-26 16:42:59 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.9ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 37ms (Views: 1.5ms | ActiveRecord: 4.4ms | Allocations: 7426)
+
+
+Started GET "/properties" for 127.0.0.1 at 2020-05-26 16:43:02 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 0.9ms | ActiveRecord: 2.4ms | Allocations: 7426)
+
+
+Started GET "/reviews/13" for 127.0.0.1 at 2020-05-26 16:43:04 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 2.2ms | Allocations: 7056)
+
+
+Started GET "/reviews/13" for 127.0.0.1 at 2020-05-26 16:43:58 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 7056)
+
+
+Started GET "/reviews/13" for 127.0.0.1 at 2020-05-26 16:44:07 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.5ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 2.5ms | Allocations: 7056)
+
+
+Started GET "/reservations/21" for ::1 at 2020-05-26 16:44:08 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"21"}
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 21]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (1.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 1.4ms | Allocations: 1807)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:44:09 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (1.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 57ms (Views: 0.8ms | ActiveRecord: 6.2ms | Allocations: 7429)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:44:10 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 7426)
+
+
+Started GET "/reviews/13" for 127.0.0.1 at 2020-05-26 16:44:10 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.7ms | Allocations: 7056)
+
+
+Started GET "/reservations/21" for ::1 at 2020-05-26 16:44:11 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"21"}
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 21]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 1803)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:44:11 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.7ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 2.9ms | Allocations: 7426)
+
+
+Started GET "/reservations/21" for ::1 at 2020-05-26 16:44:12 -0400
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"21"}
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 21]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:10:in `show'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1803)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:44:13 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (7.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 0.8ms | ActiveRecord: 8.8ms | Allocations: 7426)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:44:13 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (4.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (2.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 21ms (Views: 0.6ms | ActiveRecord: 9.3ms | Allocations: 7426)
+
+
+Started GET "/reviews/13" for 127.0.0.1 at 2020-05-26 16:44:14 -0400
+Processing by ReviewsController#show as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:13:in `show'
+  [1m[36mReservation Load (1.7ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (2.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.6ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mProperty Load (0.6ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mReservation Load (4.6ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mCACHE Property Load (0.0ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:13:in `block in show'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:15:in `block in show'
+Completed 200 OK in 27ms (Views: 0.3ms | ActiveRecord: 11.9ms | Allocations: 7056)
+
+
+Started GET "/properties" for ::1 at 2020-05-26 16:44:14 -0400
+Processing by PropertiesController#index as */*
+  [1m[36mProperty Load (0.8ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 13]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (1.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 14]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" INNER JOIN "reservations" ON "reviews"."reservation_id" = "reservations"."id" WHERE "reservations"."property_id" = $1[0m  [["property_id", 15]]
+  ↳ app/controllers/properties_controller.rb:5:in `index'
+Completed 200 OK in 24ms (Views: 0.5ms | ActiveRecord: 4.2ms | Allocations: 7429)
+
+

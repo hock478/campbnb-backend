@@ -10,6 +10,7 @@ User.destroy_all
 Property.destroy_all
 Reservation.destroy_all
 Review.destroy_all
+
 user1 = User.create(username: 'richardbobo' , fullname: 'Richard Bobo' , bio: 'Trying to travel the world on a dime.' , image_url: 'https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png', password_digest: BCrypt::Password.create('password'))
 user2 = User.create(username: 'uzo4000' , fullname: 'Uzo' , bio: 'There better be beds at these camp sites.' , image_url: 'https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png',password_digest:  BCrypt::Password.create('password'))
 user3 = User.create(username: 'dawitdawit' , fullname: 'Dawit' , bio: 'Thinking about traveling when I can.' , image_url: 'https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png',password_digest: BCrypt::Password.create('password'))

@@ -6,7 +6,7 @@ class ReviewsController < ApplicationController
     end
 
     def create
-    
+        reviews = Review.all
     end
 
     def show

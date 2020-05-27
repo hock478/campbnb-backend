@@ -17,7 +17,7 @@ user4 = User.create(username: 'chine4flatiron' , fullname: 'Chine' , bio: 'I am 
 user5 = User.create(username: 'babycakes2000' , fullname: 'Johnny Cash' , bio: 'Love to travel. Hate to waste money.' , image_url: 'https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png', password_digest:  BCrypt::Password.create('password'))
 
 property1 = Property.create(owner_id: user1.id, name: 'Camp Far North', city: 'Middle of Nowhere', state: 'Montana', details: 'You are on your own with this camp site', img_url: "https://tahoesup.com/wp-content/uploads/2019/03/photo-ts-camp-far-west-reservoir-gallery-image-2-1000x600.jpg" , price_per_night: 100)
-property2 = Property.create(owner_id: user2.id, name: 'Tiny House Camp', city: 'Salt Lake City', state: 'Utah', details: 'Beautiful national parks. Onsite showers.', img_url: "https://live.mrf.io/statics/i/ps/149364033.v2.pressablecdn.com/wp-content/uploads/2012/07/IMG_3855.jpg?width=1200&enable=upscale" , price_per_night: 80)
+property2 = Property.create(owner_id: user2.id, name: 'Tiny House Camp', city: 'Salt Lake City', state: 'Utah', details: 'Beautiful national parks. Onsite showers.', img_url: "https://res.cloudinary.com/tinyhouselistings/image/upload/f_auto,q_auto:eco/e_trim/c_fill,h_592,w_896/IMG_5783_a1a2sl" , price_per_night: 80)
 property3 = Property.create(owner_id: user3.id, name: 'Lake Tahoe South', city: 'Lake Tahoe', state: 'California', details: 'Beautiful views of the lake, and casinos near by.', img_url: "https://cdn.abcotvs.com/dip/images/5392681_071219-kgo-tahoe-nears-legal-limit-img_Image_21-21-05,02.jpg?w=800&r=16%3A9" , price_per_night: 150)
 # property4 = Property.create(user_id: user2.id, name: 'Deep Creek Camping', city: 'Deep Creek', state: 'Maryland', details: 'Just a few hour drive from DC and Baltimore.')
 # property5 = Property.create(user_id: user3.id, name: 'Beach Camp Grounds', city: 'Ocean City', state: 'Maryland', details: 'Camping in the sand dunes and an ocean beeze. ')
@@ -36,3 +36,7 @@ review1 = Review.create(user_id: user2.id, reservation_id: reservation1.id, rati
 review2 = Review.create(user_id: user1.id, reservation_id: reservation2.id, rating: 5, content: 'loved it!')
 review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
 review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+
+community1 = Community.create(user_id: user2.id, topic: "First Time Users")
+message1 = Message.create(user_id: user1.id, community_id: community1.id, content: "Hey everyone")
+message2 = Message.create(user_id: user3.id, community_id: community1.id , content: "Hey peoples")

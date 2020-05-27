@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   resources :properties
   resources :reservations
   resources :reviews
-  
+  resources :messages
+  resources :communities
+
   post '/login', to: 'auth#create'
   get '/decode_token', to: 'users#profile'
+  # get '/messages/:id', to: 'messages#community'
 end

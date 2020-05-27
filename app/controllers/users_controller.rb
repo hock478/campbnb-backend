@@ -5,8 +5,10 @@ class UsersController < ApplicationController
         render json: users
     end
 
-    def create
-    
+    def profile
+        token = request.headers["Authenticate"]
+        user = User.find(decode(token)["user_id"])
+        render json: user
     end
 
 

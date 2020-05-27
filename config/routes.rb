@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :reviews
   
   post '/login', to: 'auth#create'
+  get '/decode_token', to: 'users#profile'
 end

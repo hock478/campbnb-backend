@@ -39,4 +39,3 @@ class ReservationsController < ApplicationController
 
     
 end
-r

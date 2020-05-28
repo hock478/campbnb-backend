@@ -33,15 +33,27 @@ reservation1 = Reservation.create(user_id: user2.id, property_id: property1.id ,
 reservation2 = Reservation.create(user_id: user1.id, property_id: property2.id ,start_date: "05-23-20", end_date: "05-28-20")
 reservation3 = Reservation.create(user_id: user4.id, property_id: property3.id ,start_date: "05-22-20", end_date: "05-26-20")
 reservation6 = Reservation.create(user_id: user5.id, property_id: property3.id ,start_date: "06-20-20", end_date: "06-26-20")
-
 reservation4 = Reservation.create(user_id: user3.id, property_id: property1.id ,start_date: "05-25-20", end_date: "05-29-20")
 reservation5 = Reservation.create(user_id: user5.id, property_id: property2.id ,start_date: "05-30-20", end_date: "06-05-20")
+
+reservation7 = Reservation.create(user_id: user1.id, property_id: property4.id ,start_date: "05-30-20", end_date: "06-05-20")
+reservation8 = Reservation.create(user_id: user1.id, property_id: property5.id ,start_date: "05-30-20", end_date: "06-05-20")
+reservation9 = Reservation.create(user_id: user1.id, property_id: property6.id ,start_date: "05-30-20", end_date: "06-05-20")
+reservation10 = Reservation.create(user_id: user1.id, property_id: property7.id ,start_date: "05-30-20", end_date: "06-05-20")
+reservation11 = Reservation.create(user_id: user2.id, property_id: property6.id ,start_date: "05-30-20", end_date: "06-05-20")
+
 
 
 review1 = Review.create(user_id: user2.id, reservation_id: reservation1.id, rating: 4, content: 'Nice stay but could have been better')
 review2 = Review.create(user_id: user1.id, reservation_id: reservation2.id, rating: 5, content: 'loved it!')
 review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rating: 2, content: 'Had a great view!')
 review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
+
+review5 = Review.create(user_id: user1.id, reservation_id: reservation9.id, rating: 3, content: 'Not my favorite, but it was nice.')
+review6 = Review.create(user_id: user2.id, reservation_id: reservation11.id, rating: 5, content: 'Crowded. But i loved it. Beautiful views. worth going to!')
+
+
+
 
 community1 = Community.create(user_id: user2.id, topic: "First Time Users")
 community2 = Community.create(user_id: user3.id, topic: "New Mexico Travelers")

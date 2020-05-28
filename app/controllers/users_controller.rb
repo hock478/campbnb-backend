@@ -13,20 +13,21 @@ class UsersController < ApplicationController
 
     def create
         # user = User.new(users_params)
-        user = User.new(username: params[:username] , fullname: params[:fullname] , bio: params[:bio] , image_url: params[:image_url], password_digest: BCrypt::Password.create(params[:password]))
+        user = User.create(users_params)
 
         if user.valid?
             user.save
             payload = {user_id: user.id}
             token = encode(payload)
             new_hash = {}
+            
             new_hash["user_data"] = user
             new_hash["token"] = token
             render json: new_hash
         else
-            render json: {
-            error_message: user.errors
-        }
+            er = {}
+            er["error_message"] = user.errors
+            render json: er
         end
         
     end
@@ -35,7 +36,7 @@ class UsersController < ApplicationController
     private
 
     def users_params
-        params.require(:user).permit(:fullname, :username, :bio, :image_url, :password)
+        params.require(:user).permit(:fullname, :username, :bio, :image_url, :password, :password_confirmation)
     end
 
 

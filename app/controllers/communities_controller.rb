@@ -10,5 +10,10 @@ class CommunitiesController < ApplicationController
         render json: community.as_json(:include => [:user])
     end
 
+    def create
+        community = Community.create(user_id: params[:user_id], topic: params[:topic])
+        render json: community.as_json(:include => [:user])
+    end
+
 
 end

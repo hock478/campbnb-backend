@@ -10,17 +10,23 @@ User.destroy_all
 Property.destroy_all
 Reservation.destroy_all
 Review.destroy_all
-user1 = User.create(username: 'richardbobo' , fullname: 'Richard Bobo' , bio: 'Trying to travel the world on a dime.' , image_url: 'https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png', password_digest: BCrypt::Password.create('password'))
-user2 = User.create(username: 'uzo4000' , fullname: 'Uzo' , bio: 'There better be beds at these camp sites.' , image_url: 'https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png',password_digest:  BCrypt::Password.create('password'))
-user3 = User.create(username: 'dawitdawit' , fullname: 'Dawit' , bio: 'Thinking about traveling when I can.' , image_url: 'https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png',password_digest: BCrypt::Password.create('password'))
-user4 = User.create(username: 'chine4flatiron' , fullname: 'Chine' , bio: 'I am a programmer. I can afford a hotel. But I still choose to camp.' , image_url: 'https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png', password_digest:  BCrypt::Password.create('password'))
-user5 = User.create(username: 'babycakes2000' , fullname: 'Johnny Cash' , bio: 'Love to travel. Hate to waste money.' , image_url: 'https://f0.pngfuel.com/png/981/645/default-profile-picture-png-clip-art.png', password_digest:  BCrypt::Password.create('password'))
+Community.destroy_all
+Message.destroy_all
+
+user1 = User.create(username: 'richardbobo' , fullname: 'Richard Bobo' , bio: 'Trying to travel the world on a dime.' , image_url: 'https://semantic-ui.com/images/avatar2/large/matthew.png', password_digest: BCrypt::Password.create('password'))
+user2 = User.create(username: 'uzo4000' , fullname: 'Uzo' , bio: 'There better be beds at these camp sites.' , image_url: 'https://semantic-ui.com/images/avatar2/large/matthew.png', password_digest:  BCrypt::Password.create('password'))
+user3 = User.create(username: 'dawitdawit' , fullname: 'Dawit' , bio: 'Thinking about traveling when I can.' , image_url: 'https://semantic-ui.com/images/avatar2/large/matthew.png', password_digest: BCrypt::Password.create('password'))
+user4 = User.create(username: 'chine4flatiron' , fullname: 'Chine' , bio: 'I am a programmer. I can afford a hotel. But I still choose to camp.' , image_url: 'https://semantic-ui.com/images/avatar2/large/matthew.png', password_digest:  BCrypt::Password.create('password'))
+user5 = User.create(username: 'babycakes2000' , fullname: 'Johnny Cash' , bio: 'Love to travel. Hate to waste money.' , image_url: 'https://semantic-ui.com/images/avatar2/large/matthew.png', password_digest:  BCrypt::Password.create('password'))
 
 property1 = Property.create(owner_id: user1.id, name: 'Camp Far North', city: 'Middle of Nowhere', state: 'Montana', details: 'You are on your own with this camp site', img_url: "https://tahoesup.com/wp-content/uploads/2019/03/photo-ts-camp-far-west-reservoir-gallery-image-2-1000x600.jpg" , price_per_night: 100)
 property2 = Property.create(owner_id: user2.id, name: 'Tiny House Camp', city: 'Salt Lake City', state: 'Utah', details: 'Beautiful national parks. Onsite showers.', img_url: "https://res.cloudinary.com/tinyhouselistings/image/upload/f_auto,q_auto:eco/e_trim/c_fill,h_592,w_896/IMG_5783_a1a2sl" , price_per_night: 80)
 property3 = Property.create(owner_id: user3.id, name: 'Lake Tahoe South', city: 'Lake Tahoe', state: 'California', details: 'Beautiful views of the lake, and casinos near by.', img_url: "https://cdn.abcotvs.com/dip/images/5392681_071219-kgo-tahoe-nears-legal-limit-img_Image_21-21-05,02.jpg?w=800&r=16%3A9" , price_per_night: 150)
-# property4 = Property.create(user_id: user2.id, name: 'Deep Creek Camping', city: 'Deep Creek', state: 'Maryland', details: 'Just a few hour drive from DC and Baltimore.')
-# property5 = Property.create(user_id: user3.id, name: 'Beach Camp Grounds', city: 'Ocean City', state: 'Maryland', details: 'Camping in the sand dunes and an ocean beeze. ')
+property4 = Property.create(owner_id: user2.id, name: 'Deep Creek Camping', city: 'Deep Creek', state: 'Maryland', details: 'Just a few hour drive from DC and Baltimore.', img_url: "https://www.deepcreekcamping.com/images/Slides-camp-home/Tents-creek-3.jpg", price_per_night: 75 )
+property5 = Property.create(owner_id: user3.id, name: 'Beach Camp Grounds', city: 'Ocean City', state: 'Maryland', details: 'Camping in the sand dunes and an ocean beeze. ', img_url: "https://thervatlas.com/wp-content/uploads/2018/10/42730969_1742563885866664_3420015048293089280_o-1080x675.jpg", price_per_night: 55)
+property6 = Property.create(owner_id: user3.id, name: 'Ocean Breeze Camp Grounds', city: 'Near San Diego', state: 'California', details: 'Camping in the sand dunes and an ocean beeze. You will not get closer to the beach than this. ', img_url: "https://www.gore-tex.com/sites/default/files/blog_images/beach-camping.jpg", price_per_night: 98 )
+property7 = Property.create(owner_id: user2.id, name: 'Grand Canyon Camping', city: 'South Rim', state: 'Arizona', details: 'Camping in the sand dunes and an ocean beeze. You will not get closer to the beach than this. ', img_url: "https://www.oars.com/wp-content/uploads/2011/06/GrandCanyonHiker2014-208_sm-1024x684.jpg", price_per_night: 98 )
+
 
 
 reservation1 = Reservation.create(user_id: user2.id, property_id: property1.id ,start_date: "05-21-20", end_date: "05-27-20")
@@ -38,5 +44,8 @@ review3 = Review.create(user_id: user4.id, reservation_id: reservation3.id, rati
 review4 = Review.create(user_id: user5.id, reservation_id: reservation6.id, rating: 5, content: 'Had a cool view!')
 
 community1 = Community.create(user_id: user2.id, topic: "First Time Users")
+community2 = Community.create(user_id: user3.id, topic: "New Mexico Travelers")
+community3 = Community.create(user_id: user1.id, topic: "Camping Hacks & DIY")
+community4 = Community.create(user_id: user1.id, topic: "Grand CanyonHikes & Camping")
 message1 = Message.create(user_id: user1.id, community_id: community1.id, content: "Hey everyone")
 message2 = Message.create(user_id: user3.id, community_id: community1.id , content: "Hey peoples")

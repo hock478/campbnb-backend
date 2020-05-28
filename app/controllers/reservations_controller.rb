@@ -15,6 +15,16 @@ class ReservationsController < ApplicationController
         render json: property, include: [:user, :property]
     end 
 
+
+
+    def update
+        reservation = Reservation.find(params[:id])
+        reservation.update(reservation_params)
+        render json: reservation, include: [:user, :property] 
+    end 
+
+
+
     def destroy
         reservation = Reservation.find_by(id: params[:id])
         reservation.destroy
@@ -29,3 +39,4 @@ class ReservationsController < ApplicationController
 
     
 end
+r
